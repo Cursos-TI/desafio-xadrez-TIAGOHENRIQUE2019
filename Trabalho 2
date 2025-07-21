@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+// Constantes para direções
+#define CIMA "Cima\n"
+#define BAIXO "Baixo\n"
+#define ESQUERDA "Esquerda\n"
+#define DIREITA "Direita\n"
+#define DIAGONAL_SUPERIOR_DIREITA "Diagonal Superior Direita\n"
+#define DIAGONAL_INFERIOR_DIREITA "Diagonal Inferior Direita\n"
+#define DIAGONAL_SUPERIOR_ESQUERDA "Diagonal Superior Esquerda\n"
+#define DIAGONAL_INFERIOR_ESQUERDA "Diagonal Inferior Esquerda\n"
+
+// Constantes para número de movimentos
+#define MOVIMENTOS_BISPO 5
+#define MOVIMENTOS_TORRE 5
+#define MOVIMENTOS_RAINHA 8
+
+int main() {
+    // Movimentação do Bispo - 5 casas na diagonal superior direita
+    printf("Movimento do Bispo:\n");
+    for(int i = 0; i < MOVIMENTOS_BISPO; i++) {
+        printf(DIAGONAL_SUPERIOR_DIREITA);
+    }
+    
+    // Movimentação da Torre - 5 casas para a direita
+    printf("\nMovimento da Torre:\n");
+    for(int i = 0; i < MOVIMENTOS_TORRE; i++) {
+        printf(DIREITA);
+    }
+    
+    // Movimentação da Rainha - 8 casas para a esquerda
+    printf("\nMovimento da Rainha:\n");
+    for(int i = 0; i < MOVIMENTOS_RAINHA; i++) {
+        printf(ESQUERDA);
+    }
+    
+    return 0;
+}
